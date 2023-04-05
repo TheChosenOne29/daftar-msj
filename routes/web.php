@@ -18,4 +18,9 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/1/aktivasi', [RakitController::class, 'aktivasi']);
+Route::prefix('1')->group(function () {
+    Route::get('/aktivasi', [RakitController::class, 'aktivasi']);
+    Route::get('/baru', [RakitController::class, 'baru']);
+    Route::get('/ulang', [RakitController::class, 'ulang']);
+    Route::get('/peserta', [RakitController::class, 'peserta']);
+});

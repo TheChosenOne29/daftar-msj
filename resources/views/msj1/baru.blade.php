@@ -1,19 +1,17 @@
 @extends('layout.main')
 
 @section('title')
-    MSJ 1 | Aktivasi
+    MSJ 1 | Peserta Baru
 @endsection
 
 @section('content')
 <div class="col mx-auto p-4 py-md-5">
-    <h1>Aktivasi Akun GMS Church</h1>
+    <h1>Peserta Baru MSJ 1</h1>
     <hr class="hr" />
-    <p class="fs-5 col-md-8">Setiap peserta MSJ <b>WAJIB</b> untuk menginstal aplikasi GMS Church dan melakukan aktivasi akun di 
-        aplikasi GMS Church agar data anda terhubung dan dapat melihat history kelas yang sudah anda ikuti.
+    <p class="fs-5 col-md-8">Peserta baru adalah jemaat yang belum pernah mengikuti kelas MSJ 1 
+        maupun yang pernah mengikuti kelas MSJ 1 namun sudah lebih dari satu tahun terakhir.
     </p>
     <p class="fs-5 col-md-8">Video panduan untuk aktivasi Akun GMS Church dapat dilihat dibawah ini.</p>
-    <br>
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/EI0RjjSLQxU" title="Aktivasi Akun GMS Church - MSJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <hr class="col-3 col-md-2">
 
@@ -27,7 +25,7 @@
        <br>
        <div class="d-grid gap-2 col-6 mx-auto">
            <a href="https://play.google.com/store/apps/details?id=com.gms.church" class="btn btn-primary btn-lg" role="button"><i class="bi-android2"></i>Android</a>
-           <a href="https://apps.apple.com/id/app/gms-church/id1494423842" class="btn btn-primary btn-lg" role="button"><i class="bi-apple"></i>iOS</a>
+           <a href="https://play.google.com/store/apps/details?id=com.gms.church" class="btn btn-primary btn-lg" role="button"><i class="bi-apple"></i>iOS</a>
         </div>
     </div>
 
@@ -46,7 +44,7 @@
     </h2>
     <p style="text-align: center">Silahkan lanjutkan pendaftaran menggunakan tombol dibawah ini.</p>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-success btn-lg" href="/1/peserta">Ya, saya sudah memiliki akun dan berhasil aktivasi</a>
+            <a class="btn btn-danger btn-lg" href="/1/baru">Daftar MSJ 1 Peserta Baru</a>
         </div>
     </div>
 </div>
