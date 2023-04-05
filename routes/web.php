@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\RakitController;
 
 /*
@@ -23,4 +25,16 @@ Route::prefix('1')->group(function () {
     Route::get('/baru', [RakitController::class, 'baru']);
     Route::get('/ulang', [RakitController::class, 'ulang']);
     Route::get('/peserta', [RakitController::class, 'peserta']);
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::prefix('admin')->group(function () {
+        Route::get('/dashboard', [AdminController::class, 'dashboard']);
+        Route::get('/dashboard', [AdminController::class, 'dashboard']);
+        Route::get('/dashboard', [AdminController::class, 'dashboard']);
+    });
+});
+
+Route::middleware(['guest'])->group(function () {
+    Route::get('/signin', [AuthController::class, 'signin']);
 });
