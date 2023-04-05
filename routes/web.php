@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RamuController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\RakitController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,20 +21,18 @@ Route::get('/', function () {
 });
 
 Route::prefix('1')->group(function () {
-    Route::get('/aktivasi', [RakitController::class, 'aktivasi']);
-    Route::get('/baru', [RakitController::class, 'baru']);
-    Route::get('/ulang', [RakitController::class, 'ulang']);
-    Route::get('/peserta', [RakitController::class, 'peserta']);
+    Route::get('/aktivasi', [RamuController::class, 'aktivasi']);
+    Route::get('/baru', [RamuController::class, 'baru']);
+    Route::get('/ulang', [RamuController::class, 'ulang']);
+    Route::get('/peserta', [RamuController::class, 'peserta']);
 });
 
 Route::middleware(['auth'])->group(function () {
     Route::prefix('admin')->group(function () {
-        Route::get('/dashboard', [AdminController::class, 'dashboard']);
-        Route::get('/dashboard', [AdminController::class, 'dashboard']);
-        Route::get('/dashboard', [AdminController::class, 'dashboard']);
+        Route::get('/dashboard', [AdminController::class, 'index']);
     });
 });
 
-Route::middleware(['guest'])->group(function () {
-    Route::get('/signin', [AuthController::class, 'signin']);
-});
+Route::get('/logout', [LoginController::class, 'logOut']);
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'auth']);
