@@ -21,7 +21,7 @@
         </div>
         <div class="card-body">
             <img src="/img/covermsj1.jpg" class="card-img">
-            <h5 class="card-title"> MSJ 1 <small> Angkatan 2 - April 2023 </small></h5>
+            <h5 class="card-title"> MSJ 1 <small> Angkatan {{ $ramu -> nomor }} - {{ $ramu -> bulan }} {{ $ramu -> tahun }}</small></h5>
             <p class="card-text">MSJ 1 ditujukan untuk jiwa baru atau jemaat yang baru bergabung dalam Gereja Mawar Sharon 
                 dan ingin tertanam, bertumbuh, dan berbuah</p>
             <p class="card-text">Terdiri dari 4 kelas</p>
@@ -37,7 +37,7 @@
         </div>
         <div class="card-body">
             <img src="/img/covermsj2.jpg" class="card-img">
-            <h5 class="card-title"> MSJ 2 <small> Angkatan 2 - April 2023 </small></h5>
+            <h5 class="card-title"> MSJ 2 <small> Angkatan {{ $rakit -> nomor }} - {{ $rakit -> bulan }} {{ $rakit -> tahun }}</small></h5>
             <p class="card-text">MSJ 2 ditujukan untuk jemaat yang sudah bertumbuh di Gereja Mawar Sharon dan akan 
                 terlibat dalam pelayanan baik dalam departemen maupun penggembalaan.</p>
             <p class="card-text">Terdiri dari 4 kelas</p>
@@ -53,7 +53,7 @@
         </div>
         <div class="card-body">
             <img src="/img/covermsj3.jpg" class="card-img">
-            <h5 class="card-title"> MSJ 3 <small> Angkatan 2 - April 2023 </small></h5>
+            <h5 class="card-title"> MSJ 3 <small> Angkatan  {{ $terap -> nomor }} - {{ $terap -> bulan }} {{ $terap -> tahun }}</small></h5>
             <p class="card-text">MSJ 3 ditujukan untuk para pemimpin/calon pemimpin yang akan melayani 
                 baik dalam departemen maupun penggembalaan yang ada.</p>
             <p class="card-text">Terdiri dari 5 kelas</p>

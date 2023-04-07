@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RamuController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
@@ -16,9 +17,7 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::prefix('1')->group(function () {
     Route::get('/aktivasi', [RamuController::class, 'aktivasi']);
