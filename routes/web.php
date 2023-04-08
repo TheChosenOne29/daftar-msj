@@ -29,6 +29,14 @@ Route::prefix('1')->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [AdminController::class, 'index']);
+        Route::get('/angkatan', [AdminController::class, 'angkatan']);
+        Route::get('/msj1', [AdminController::class, 'ramu']);
+        Route::get('/msj2', [AdminController::class, 'rakit']);
+        Route::get('/msj3', [AdminController::class, 'terap']);
+        
+        Route::post('/msj1/update', [AdminController::class, 'ramuUpdate']);
+        Route::post('/msj2/update', [AdminController::class, 'rakitUpdate']);
+        Route::post('/msj3/update', [AdminController::class, 'terapUpdate']);
     });
 });
 
