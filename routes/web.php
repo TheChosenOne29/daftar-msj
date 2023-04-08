@@ -34,9 +34,9 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/msj2', [AdminController::class, 'rakit']);
         Route::get('/msj3', [AdminController::class, 'terap']);
         
-        Route::post('/msj1/update', [AdminController::class, 'ramuUpdate']);
-        Route::post('/msj2/update', [AdminController::class, 'rakitUpdate']);
-        Route::post('/msj3/update', [AdminController::class, 'terapUpdate']);
+        Route::post('/msj1/update/{id}', [AdminController::class, 'ramuUpdate']);
+        Route::post('/msj2/update/{id}', [AdminController::class, 'rakitUpdate']);
+        Route::post('/msj3/update/{id}', [AdminController::class, 'terapUpdate']);
     });
 });
 
