@@ -21,19 +21,19 @@ class RamuSeeder extends Seeder
             'judul' => 'Keselamatan'
         ]);
         Ramu::create([
-            'tanggal' => 20230411,
+            'tanggal' => 20230413,
             'jam' => 190000,
-            'judul' => 'Keselamatan'
+            'judul' => 'Berjalan Bersama Tuhan'
         ]);
         Ramu::create([
-            'tanggal' => 20230411,
-            'jam' => 190000,
-            'judul' => 'Keselamatan'
+            'tanggal' => 20230418,
+            'jam' => 121000,
+            'judul' => 'Membereskan Masalah di Masa Lalu'
         ]);
         Ramu::create([
-            'tanggal' => 20230411,
-            'jam' => 190000,
-            'judul' => 'Keselamatan'
+            'tanggal' => 20230421,
+            'jam' => 154000,
+            'judul' => 'Baptisan Roh Kudus'
         ]);
     }
 }
