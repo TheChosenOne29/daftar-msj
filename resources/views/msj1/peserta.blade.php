@@ -11,42 +11,28 @@
     
     <h2>Jadwal Kelas MSJ 1</h2>
     <p class="fs-5 col-md-8">Angkatan 2 - 2023</p>
-    <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Kelas</th>
-            <th scope="col">Hari, tanggal</th>
-            <th scope="col">Waktu</th>
-            <th scope="col">Nama kelas</th>
+    <div class="table-responsive">
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Kelas</th>
+              <th scope="col">Hari, tanggal</th>
+              <th scope="col">Waktu</th>
+              <th scope="col">Nama kelas</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            @foreach ($ramu as $item2)
+            <tr>
+              <th scope="row">{{ $item2 -> id }}</th>
+              <td>{{ Carbon\Carbon::parse($item2 -> tanggal)->translatedFormat('l, d F Y'); }}</td>
+              <td>{{ substr($item2 -> jam, 0, -3);}}</td>
+              <td style="text-align-last: left">{{ $item2 -> judul }}</td>
           </tr>
-        </thead>
-        <tbody class="table-group-divider">
-          <tr>
-            <th scope="row">1</th>
-            <td>Selasa, 11 April 2023</td>
-            <td>19.00-20.30</td>
-            <td>Keselamatan</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Kamis, 13 April 2023</td>
-            <td>19.00-20.30</td>
-            <td>Berjalan Bersama Tuhan</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Selasa, 18 April 2023</td>
-            <td>10.40-12.10</td>
-            <td>Membereskan Masalah di Masa Lalu</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Kamis, 20 April 2023</td>
-            <td>15.20-17.00</td>
-            <td>Baptisan Roh Kudus</td>
-          </tr>
-        </tbody>
-    </table>
+            @endforeach
+          </tbody>
+      </table>
+    </div>
     <br>
     <hr class="hr" />
 

@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ramu;
+use App\Models\Angkatan;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class RamuController extends Controller
 {
@@ -23,6 +26,9 @@ class RamuController extends Controller
 
     public function peserta()
     {
-        return view('msj1.peserta');
+        return view('msj1.peserta', [
+            'ramu' => Ramu::get(),
+            'angkatan' => Angkatan::get()
+        ]);
     }
 }

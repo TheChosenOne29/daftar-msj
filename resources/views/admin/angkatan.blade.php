@@ -10,8 +10,8 @@
 
 @section('content')
     <div class="container">
-        <div class="col-md-6 mx-auto">
-            <h4>Angkatan MSJ</h4>
+        <div class="col-md-8 mx-auto">
+            <h4 style="text-align: center" class="mb-4">Angkatan MSJ</h4>
             <table class="table table-bordered mb-5 text-center">
                 <thead>
                     <tr>
