@@ -24,14 +24,51 @@
                 @foreach ($angkatan as $item)
                     <tbody>
                         <tr>
-                            <th scope="row">{{ $item->id }}</th>
+                            <th scope="row">
+                                {{ $item -> id }}
+                            </th>
                             <td>{{ $item -> nomor }}</td>
-                            <td>{{ $item -> bulan }}</td>
-                            <td>{{ $item -> tahun }}</td>
+                            <td>{{ Carbon\Carbon::parse($item -> bulantahun)->translatedFormat('F') }}</td>
+                            <td>{{ Carbon\Carbon::parse($item -> bulantahun)->translatedFormat('Y') }}</td>
                         </tr>
                 @endforeach
                 </tbody>
             </table>
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">MSJ</th>
+                            <th scope="col">Angkatan</th>
+                            <th scope="col">Bulan, Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($angkatan as $item2)
+                            <form action="/admin/angkatan/update/{{ $item2 -> id }}" method="POST">
+                                @csrf
+                                <tr>
+                                    <th scope="row">
+                                        {{ $item2 -> id }}
+                                        <input type="hidden" name="id" value={{ $item2 -> id }}>
+                                    </th>
+                                    <td>
+                                        <input type="number" name="nomor" width="1em" value={{ $item2 ->  nomor}}>
+                                    </td>
+                                    <td>
+                                        <input type="date" name="bulantahun" width="10em" value={{ ($item2 -> bulantahun) }}>
+                                    </td>
+                                    <td>
+                                        <button type="submit" class="btn btn-sm btn-warning">
+                                            Update
+                                        </button>
+                                    </td>
+                                </tr>
+                            </form>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 @endsection

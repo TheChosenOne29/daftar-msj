@@ -17,8 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->integer('nomor');
-            $table->string('bulan');
-            $table->integer('tahun');
+            $table->date('bulantahun');
         });
     }
 

@@ -9,7 +9,6 @@ class Angkatan extends Model
 {
     protected $fillable = [
         'nomor',
-        'bulan',
-        'tahun'
+        'bulantahun',
     ];
 }

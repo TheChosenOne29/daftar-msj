@@ -45,6 +45,17 @@ class AdminController extends Controller
         ]);
     }
 
+    public function angkatanUpdate($id, Request $request)
+    {
+        $angkatan = Angkatan::find($id);
+        $angkatan->update([
+            'nomor' => $request -> nomor,
+            'bulantahun' => $request -> bulantahun,
+        ]);
+        
+        return redirect()->intended('/admin/angkatan')->with('success-update', 'Data Updated Successfully');
+    }
+
     public function ramuUpdate($id, Request $request)
     {
         $ramu = Ramu::find($id);

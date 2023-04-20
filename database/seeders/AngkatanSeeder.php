@@ -17,20 +17,17 @@ class AngkatanSeeder extends Seeder
     {
         Angkatan::create([
             'nomor' => 2,
-            'bulan' => 'April',
-            'tahun' => 2023
+            'bulantahun' => 20230401,
         ]);
 
         Angkatan::create([
             'nomor' => 2,
-            'bulan' => 'April',
-            'tahun' => 2023
+            'bulantahun' => 20230401,
         ]);
 
         Angkatan::create([
             'nomor' => 1,
-            'bulan' => 'Mei',
-            'tahun' => 2023
+            'bulantahun' => 20230401,
         ]);
     }
 }

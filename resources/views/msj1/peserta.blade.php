@@ -10,7 +10,7 @@
     <hr class="hr" />
     
     <h2>Jadwal Kelas MSJ 1</h2>
-    <p class="fs-5 col-md-8">Angkatan 2 - 2023</p>
+    <p class="fs-5 col-md-8">Angkatan {{ $angkatan -> nomor }} - {{ Carbon\Carbon::parse($angkatan -> bulantahun)->translatedFormat('F Y'); }}</p>
     <div class="table-responsive">
       <table class="table table-striped">
           <thead>
@@ -61,7 +61,7 @@
         <br>
         
         <div class="d-grid gap-2 col-6 mx-auto">
-            <a href="1/ulang" class="btn btn-primary btn-lg" role="button">Saya peserta ulang</a>
+            <a href="/1/ulang" class="btn btn-primary btn-lg" role="button">Saya peserta ulang</a>
             </div>
         </div>
 
@@ -75,7 +75,7 @@
     </h2>
     <p style="text-align: center">Silahkan ikuti instruksi pada halaman sebelumnya, atau tekan tombol dibawah.</p>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-danger btn-lg" href="/1/baru">Aktivasi Akun GMS Church</a>
+            <a class="btn btn-danger btn-lg" href="/1/aktivasi">Aktivasi Akun GMS Church</a>
         </div>
     </div>
 </div>

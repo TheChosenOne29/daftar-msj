@@ -26,9 +26,12 @@ class RamuController extends Controller
 
     public function peserta()
     {
-        return view('msj1.peserta', [
-            'ramu' => Ramu::get(),
-            'angkatan' => Angkatan::get()
+        $ramu = Ramu::all();
+        $angkatan = Angkatan::first();
+
+        return view('msj1.peserta')->with([
+            'ramu' => $ramu,
+            'angkatan' => $angkatan
         ]);
     }
 }

@@ -25,10 +25,12 @@
                     @foreach ($angkatan as $item)
                         <tbody>
                             <tr>
-                                <th scope="row">{{ $item->id }}</th>
+                                <th scope="row">
+                                    {{ $item -> id }}
+                                </th>
                                 <td>{{ $item -> nomor }}</td>
-                                <td>{{ $item -> bulan }}</td>
-                                <td>{{ $item -> tahun }}</td>
+                                <td>{{ Carbon\Carbon::parse($item -> bulantahun)->translatedFormat('F'); }}</td>
+                                <td>{{ Carbon\Carbon::parse($item -> bulantahun)->translatedFormat('Y'); }}</td>
                             </tr>
                     @endforeach
                     </tbody>
