@@ -33,8 +33,8 @@
 
     <div class="col-md-6">
         <h2>Koordinasi Peserta MSJ</h2>
-        <p class="fs-5">Informasi kelas akan dibagikan melalui WhatsApp Group peserta MSJ. Harap para peserta MSJ mendaftar menggunakan nomor telepon yang
-            memiliki akun WhatsApp. Undangan grup akan dibagikan ke nomor telepon yang terdaftar di aplikasi GMS Church.
+        <p class="fs-5">Informasi kelas akan dibagikan melalui <i>WhatsApp Group</i> peserta MSJ. Harap para peserta MSJ mendaftar menggunakan nomor telepon yang
+            memiliki akun <i>WhatsApp</i>. Undangan grup akan dibagikan ke nomor telepon yang terdaftar di aplikasi GMS Church.
         </p>
     </div>
 
