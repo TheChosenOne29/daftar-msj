@@ -36,7 +36,7 @@
     <br>
     <hr class="hr" />
 
-    <h2>Pilih Peserta</h2>
+    <h2>Pilih Jenis Peserta</h2>
     <p class="fs-5 col-md-8">Pendaftaran MSJ 1 ini dibagi menjadi dua, untuk <b>peserta baru</b> dan untuk <b>peserta ulang</b>. Harap diperhatikan agar tidak terjadi kesalahan.
     </p>
     <br>
@@ -46,22 +46,18 @@
             <p class="fs-5">Peserta baru adalah jemaat yang belum pernah mengikuti kelas MSJ 1 maupun yang pernah mengikuti kelas MSJ 1 namun sudah lebih dari satu tahun terakhir.
         </p>
 
-        <br>
-
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a href="/1/baru" class="btn btn-success btn-lg" role="button">Saya peserta baru</a>
+        <div class="d-grid gap-2 col-6">
+            <a href="/1/baru" class="btn btn-success btn-lg mt-auto" role="button">Saya peserta baru</a>
             </div>
         </div>
 
         <div class="col-md-6">
             <h3>Peserta Ulang</h3>
-            <p class="fs-5">Peserta ulang adalah jemaat yang sudah pernah mengikuti kelas MSJ 1 dalam satu tahun terakhir namun belum lulus.
+            <p class="fs-5">Peserta ulang adalah jemaat yang sudah pernah mengikuti kelas MSJ 1 dalam satu tahun terakhir namun belum lulus karena ada kelas yang harus diulang.
         </p>
-
-        <br>
         
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a href="/1/ulang" class="btn btn-primary btn-lg" role="button">Saya peserta ulang</a>
+        <div class="d-grid gap-2 col-6">
+            <a href="/1/ulang" class="btn btn-primary btn-lg mt-auto" role="button">Saya peserta ulang</a>
             </div>
         </div>
 

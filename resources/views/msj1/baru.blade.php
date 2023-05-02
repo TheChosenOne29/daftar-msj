@@ -5,47 +5,62 @@
 @endsection
 
 @section('content')
-<div class="col mx-auto p-4 py-md-5">
-    <h1>Peserta Baru MSJ 1</h1>
-    <hr class="hr" />
-    <p class="fs-5 col-md-8">Peserta baru adalah jemaat yang belum pernah mengikuti kelas MSJ 1 
-        maupun yang pernah mengikuti kelas MSJ 1 namun sudah lebih dari satu tahun terakhir.
-    </p>
-    <p class="fs-5 col-md-8">Video panduan untuk aktivasi Akun GMS Church dapat dilihat dibawah ini.</p>
-
-    <hr class="col-3 col-md-2">
-
-    <div class="row g-5">
-      <div class="col-md-6">
-        <h2>Aplikasi GMS Church</h2>
-        <p class="fs-5">Aplikasi GMS Church akan membantu anda tertanam, bertumbuh, dan berbuah dalam kehidupan rohani anda dalam Gereja Mawar Sharon. 
-            Anda dapat mengetahui informasi terbaru mengenai jadwal ibadah, pelayanan, dan pencapaian pribadi anda didalam komitmen dan pelayanan. 
-            Dapatkan versi terbaru dibawah ini.
-       </p>
-       <br>
-       <div class="d-grid gap-2 col-6 mx-auto">
-           <a href="https://play.google.com/store/apps/details?id=com.gms.church" class="btn btn-primary btn-lg" role="button"><i class="bi-android2"></i>Android</a>
-           <a href="https://play.google.com/store/apps/details?id=com.gms.church" class="btn btn-primary btn-lg" role="button"><i class="bi-apple"></i>iOS</a>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <h2>Koordinasi Peserta MSJ</h2>
-        <p class="fs-5">Informasi kelas akan dibagikan melalui WhatsApp Group peserta MSJ. Harap para peserta MSJ mendaftar menggunakan nomor telepon yang
-            memiliki akun WhatsApp. Undangan grup akan dibagikan ke nomor telepon yang terdaftar di aplikasi GMS Church.
+    <div class="col mx-auto p-4 py-md-5">
+        <h1>Peserta Baru MSJ 1</h1>
+        <hr class="hr" />
+        <p class="fs-5 col-md-8">Peserta baru adalah jemaat yang belum pernah mengikuti kelas MSJ 1
+            maupun yang pernah mengikuti kelas MSJ 1 namun sudah lebih dari satu tahun terakhir.
         </p>
-    </div>
 
-    <hr class="hr" />
+        <hr class="col">
 
-    <div class="col">
-    <h2 style="text-align: center">
-        Sudah memiliki akun GMS Church dan berhasil melakukan aktivasi?
-    </h2>
-    <p style="text-align: center">Silahkan lanjutkan pendaftaran menggunakan tombol dibawah ini.</p>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-danger btn-lg" href="/1/baru">Daftar MSJ 1 Peserta Baru</a>
+        <div class="row row-cols-1 row-cols-md-3 mb-3">
+            <div class="col mb-3">
+                <div class="card h-100 mb-4 rounded-3 shadow-sm border">
+                    <h4 class="my-0 fw-normal text-center mt-3">1. Register</h4>
+                    <div class="card-body d-flex flex-column">
+                        <img src="/img/register.png" class="card-img border mb-2">
+                        <h5 class="card-text">Tekan tombol "Register"</h5>
+                        <p class="card-text">Jika anda membuka app MSJ namun tidak tampil seperti di gambar, silahkan
+                            <i>authorize</i> akun anda terlebih dahulu
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card h-100 mb-4 rounded-3 shadow-sm border">
+                    <h4 class="my-0 fw-normal text-center mt-3">2. Search</h4>
+                    <div class="card-body d-flex flex-column">
+                        <img src="/img/search.png" class="card-img border mb-2">
+                        <h5 class="card-text">Isi sesuai gambar</h5>
+                        <p class="card-text">
+                            Pastikan semua kolom terisi dengan <b>benar</b></p>
+                        <ul>
+                            <li>Pilih <b>My Spiritual Journey 1</b></li>
+                            <li>Isi <b>2023</b></li>
+                            <li>Pilih <b>Lampung</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card h-100 mb-4 rounded-3 shadow-sm border">
+                    <h4 class="my-0 fw-normal text-center mt-3">3. Submit</h4>
+                    <div class="card-body d-flex flex-column">
+                        <img src="/img/submit.png" class="card-img border mb-2">
+                        <h5 class="card-text">Tekan tombol "Submit"</h5>
+                        <p class="card-text">Jadwal kelas akan ditampilkan. Pastikan anda mencatatnya agar tidak terlewat.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+        <hr class="hr" />
+        <h2 style="text-align: center">
+            Selamat!
+        </h2>
+        <p style="text-align: center">Anda berhasil mendaftar kelas MSJ 1. Sampai jumpa di kelas pertama!</p>
     </div>
-</div>
 @endsection

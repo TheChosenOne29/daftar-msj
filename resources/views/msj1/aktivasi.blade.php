@@ -46,7 +46,7 @@
     </h2>
     <p style="text-align: center">Silahkan lanjutkan pendaftaran menggunakan tombol dibawah ini.</p>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-success btn-lg" href="/1/peserta">Ya, saya sudah memiliki akun dan berhasil aktivasi</a>
+            <a class="btn btn-success btn-lg" href="/1/peserta">Ya, saya sudah berhasil aktivasi</a>
         </div>
     </div>
 </div>

@@ -14,50 +14,50 @@
 </div>
 
 <div class="row row-cols-1 row-cols-md-3 mb-3">
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm border-success">
+    <div class="col mb-3">
+      <div class="card h-100 mb-4 rounded-3 shadow-sm border-success">
         <div class="card-header py-3 text-bg-success border-success">
           <h4 class="my-0 fw-normal text-center">My Spiritual Journey 1</h4>
         </div>
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
             <img src="/img/covermsj1.jpg" class="card-img">
             <h5 class="card-title"> MSJ 1 <small> Angkatan {{ $ramu -> nomor }} - {{ Carbon\Carbon::parse($ramu -> bulantahun)->translatedFormat('F Y'); }}</small></h5>
             <p class="card-text">MSJ 1 ditujukan untuk jiwa baru atau jemaat yang baru bergabung dalam Gereja Mawar Sharon 
-                dan ingin tertanam, bertumbuh, dan berbuah</p>
-            <p class="card-text">Terdiri dari 4 kelas</p>
-            <a href="1/aktivasi" class="w-100 btn btn-lg btn-success">Daftar MSJ 1</a>
+                dan ingin tertanam, bertumbuh, dan berbuah.</p>
+            <small class="card-text mt-auto">Terdiri dari 4 kelas</small>
+            <a href="1/aktivasi" class="mt-auto w-100 btn btn-lg btn-success">Daftar MSJ 1</a>
         </div>
       </div>
     </div>
     
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm border-danger">
+    <div class="col mb-3">
+      <div class="card h-100 mb-4 rounded-3 shadow-sm border-danger">
         <div class="card-header py-3 text-bg-danger border-danger">
           <h4 class="my-0 fw-normal text-center">My Spiritual Journey 2</h4>
         </div>
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
             <img src="/img/covermsj2.jpg" class="card-img">
             <h5 class="card-title"> MSJ 2 <small> Angkatan {{ $rakit -> nomor }} - {{ Carbon\Carbon::parse($rakit -> bulantahun)->translatedFormat('F Y'); }}</small></h5>
-            <p class="card-text">MSJ 2 ditujukan untuk jemaat yang sudah bertumbuh dan akan 
-                terlibat dalam pelayanan departemen dan penggembalaan.</p>
-            <p class="card-text">Terdiri dari 4 kelas</p>
-            <a href="#" class="w-100 btn btn-lg btn-danger">Daftar MSJ 2</a>
+            <p class="card-text">MSJ 2 ditujukan untuk jemaat yang sudah bertumbuh dan yang akan 
+              terlibat dalam pelayanan dalam departemen dan penggembalaan.</p>
+              <small class="card-text mt-auto">Terdiri dari 4 kelas</small>
+            <a href="#" class="mt-auto w-100 btn btn-lg btn-danger">Daftar MSJ 2</a>
         </div>
       </div>
     </div>
 
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+    <div class="col mb-3">
+      <div class="card h-100 mb-4 rounded-3 shadow-sm border-primary">
         <div class="card-header py-3 text-bg-primary border-primary">
           <h4 class="my-0 fw-normal text-center">My Spiritual Journey 3</h4>
         </div>
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
             <img src="/img/covermsj3.jpg" class="card-img">
             <h5 class="card-title"> MSJ 3 <small> Angkatan {{ $terap -> nomor }} - {{ Carbon\Carbon::parse($terap -> bulantahun)->translatedFormat('F Y'); }}</small></h5>
             <p class="card-text">MSJ 3 ditujukan untuk para pemimpin/calon pemimpin yang akan melayani 
                 baik dalam departemen maupun penggembalaan yang ada.</p>
-            <p class="card-text">Terdiri dari 5 kelas</p>
-            <a href="#" class="w-100 btn btn-lg btn-primary">Daftar MSJ 3</a>
+            <small class="card-text mt-auto">Terdiri dari 5 kelas</small>
+            <a href="#" class="mt-auto w-100 btn btn-lg btn-primary">Daftar MSJ 3</a>
         </div>
       </div>
     </div>
