@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ramu;
+use App\Models\Ulang;
 use App\Models\Angkatan;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -21,7 +22,11 @@ class RamuController extends Controller
 
     public function ulang()
     {
-        return view('msj1.ulang');
+        $link = Ulang::first();
+
+        return view('msj1.ulang')->with([
+            'link' => $link
+        ]);
     }
 
     public function peserta()
