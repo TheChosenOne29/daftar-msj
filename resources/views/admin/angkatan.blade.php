@@ -56,7 +56,7 @@
                                         <input type="number" name="nomor" width="1em" value={{ $item2 ->  nomor}}>
                                     </td>
                                     <td>
-                                        <input type="date" name="bulantahun" width="10em" value={{ ($item2 -> bulantahun) }}>
+                                        <input type="month" name="bulantahun" width="10em" value={{ ($item2 -> bulantahun) }}>
                                     </td>
                                     <td>
                                         <button type="submit" class="btn btn-sm btn-warning">
