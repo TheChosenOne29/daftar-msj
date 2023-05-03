@@ -7,7 +7,7 @@
     <title>@yield('title')</title>
     @include('layout.partials.head')
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     @include('layout.partials.nav')
     <div class="col-lg-8 mx-auto p-4 py-md-2">
             @yield('content')
