@@ -31,7 +31,7 @@
                                         <input type="hidden" name="id" value={{ $item2->id }}>
                                     </th>
                                     <td>
-                                        <input type="url" style="width: 30em" value="{{ $item2->link }}"
+                                        <input type="url" style="width: 20em" value="{{ $item2->link }}"
                                             name="link" />
                                     </td>
                                     <td>
