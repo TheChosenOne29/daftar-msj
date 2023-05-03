@@ -8,8 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Ulang extends Model
 {
     protected $fillable = [
-        'ramu',
-        'rakit',
-        'terap'
+        'link'
     ];
 }

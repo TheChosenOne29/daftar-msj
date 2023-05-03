@@ -19,10 +19,10 @@ class UlangSeeder extends Seeder
             'link' => 'https://google.com',
         ]);
         Ulang::create([
-            'link' => 'https://google.com',
+            'link' => 'https://gms.church',
         ]);
         Ulang::create([
-            'link' => 'https://google.com',
+            'link' => 'https://itera.ac.id',
         ]);
     }
 }

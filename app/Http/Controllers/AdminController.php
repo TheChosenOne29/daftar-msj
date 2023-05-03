@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ramu;
+use App\Models\Ulang;
 use App\Models\Angkatan;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -80,5 +81,22 @@ class AdminController extends Controller
         $Terap = Terap::all();
         
         return view('admin.terap', compact('terap'));
+    }
+
+    public function ulangUpdate($id, Request $request)
+    {
+        $link = Ulang::find($id);
+        $link->update([
+            'link' => $request -> link
+        ]);
+
+        return redirect()->intended('/admin/ulang')->with('success-update', 'Data Updated Successfully');
+    }
+
+    public function ulang()
+    {
+        return view('admin.ulang', [
+            'link' => Ulang::get(),
+        ]);
     }
 }

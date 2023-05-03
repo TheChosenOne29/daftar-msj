@@ -30,11 +30,13 @@ Route::middleware(['auth'])->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [AdminController::class, 'index']);
         Route::get('/angkatan', [AdminController::class, 'angkatan']);
+        Route::get('/ulang', [AdminController::class, 'ulang']);
         Route::get('/msj1', [AdminController::class, 'ramu']);
         Route::get('/msj2', [AdminController::class, 'rakit']);
         Route::get('/msj3', [AdminController::class, 'terap']);
 
         Route::post('/angkatan/update/{id}', [AdminController::class, 'angkatanUpdate']);
+        Route::post('/link/update/{id}', [AdminController::class, 'ulangUpdate']);
         
         Route::post('/msj1/update/{id}', [AdminController::class, 'ramuUpdate']);
         Route::post('/msj2/update/{id}', [AdminController::class, 'rakitUpdate']);

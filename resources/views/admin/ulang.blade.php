@@ -1,31 +1,29 @@
 @extends('layout.admin')
 
 @section('title')
-    MSJ 1 | Daftar MSJ
+    Mengulang | Daftar MSJ
 @endsection
 
 @section('heading')
-    <h1 class="h2">My Spiritual Journey 1</h1>
+    <h1 class="h2">Daftar Link Peserta Ulang MSJ</h1>
 @endsection
 
 @section('content')
     <div class="container">
         <div class="col-md-8 mx-auto">
-            <h4 style="text-align: center" class="mb-4">Jadwal MSJ 1</h4>
+            <h4 style="text-align: center" class="mb-4">Google Form</h4>
             <div class="table-responsive">
                 <table class="table table-bordered text-center">
                     <thead>
                         <tr>
-                            <th scope="col">Kelas</th>
-                            <th scope="col">Tanggal</th>
-                            <th scope="col">Jam</th>
-                            <th scope="col">Judul</th>
+                            <th scope="col">MSJ</th>
+                            <th scope="col">Link</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($ramu as $item2)
-                            <form action="/admin/msj1/update/{{ $item2->id }}" method="POST">
+                        @foreach ($link as $item2)
+                            <form action="/admin/link/update/{{ $item2->id }}" method="POST">
                                 @csrf
                                 <tr>
                                     <th scope="row">
@@ -33,15 +31,8 @@
                                         <input type="hidden" name="id" value={{ $item2->id }}>
                                     </th>
                                     <td>
-                                        <input type="date" data-date-inline-picker="true" value="{{ $item2->tanggal }}"
-                                            name="tanggal" />
-                                    </td>
-                                    <td>
-                                        <input type="time" name="jam" value="{{ substr($item2->jam, 0, -3) }}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="judul" style="width: 20em"
-                                            value="{{ $item2->judul }}">
+                                        <input type="url" style="width: 30em" value="{{ $item2->link }}"
+                                            name="link" />
                                     </td>
                                     <td>
                                         <button type="submit" class="btn btn-sm btn-warning">
@@ -53,6 +44,7 @@
                         @endforeach
                     </tbody>
                 </table>
+                <p>Harap pastikan link benar dan gunakan <i>shortener</i> apabila memungkinkan</p>
             </div>
             @if (session()->has('success-update'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">

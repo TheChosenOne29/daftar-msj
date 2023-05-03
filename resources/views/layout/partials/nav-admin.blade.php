@@ -14,6 +14,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ request()->is('admin/ulang') ? 'active' : '' }}" href="/admin/ulang">
+                    <i class="bi-rewind-fill" class="align-text-bottom"></i>
+                    Daftar Ulang
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ request()->is('admin/msj1') ? 'active' : '' }}" href="/admin/msj1">
                     <i class="bi-1-circle-fill" class="align-text-bottom"></i>
                     MSJ 1
