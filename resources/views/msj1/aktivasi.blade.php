@@ -15,7 +15,7 @@
     <br>
     <iframe width="100%" height="500" src="https://www.youtube.com/embed/EI0RjjSLQxU" title="Aktivasi Akun GMS Church - MSJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-    <hr class="col-3 col-md-2">
+    <hr class="hr">
 
     <div class="row g-5">
       <div class="col-md-6">

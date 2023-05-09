@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Database\Seeders\RamuSeeder;
+use Database\Seeders\RakitSeeder;
 use Database\Seeders\UlangSeeder;
 use Database\Seeders\AngkatanSeeder;
 use Illuminate\Foundation\Auth\User;
@@ -29,6 +30,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             AngkatanSeeder::class,
             RamuSeeder::class,
+            RakitSeeder::class,
             UlangSeeder::class
         ]);
     }

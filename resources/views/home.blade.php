@@ -41,7 +41,7 @@
             <p class="card-text">MSJ 2 ditujukan untuk jemaat yang sudah bertumbuh dan yang akan 
               terlibat dalam pelayanan dalam departemen dan penggembalaan.</p>
               <small class="card-text mt-auto">Terdiri dari 4 kelas</small>
-            <a href="#" class="mt-auto w-100 btn btn-lg btn-danger">Daftar MSJ 2</a>
+            <a href="2/nij" class="mt-auto w-100 btn btn-lg btn-danger">Daftar MSJ 2</a>
         </div>
       </div>
     </div>

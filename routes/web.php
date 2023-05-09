@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RamuController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RakitController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,10 @@ Route::prefix('1')->group(function () {
     Route::get('/baru', [RamuController::class, 'baru']);
     Route::get('/ulang', [RamuController::class, 'ulang']);
     Route::get('/peserta', [RamuController::class, 'peserta']);
+});
+
+Route::prefix('2')->group(function () {
+    Route::get('/nij', [RakitController::class, 'nij']);
 });
 
 Route::middleware(['auth'])->group(function () {
