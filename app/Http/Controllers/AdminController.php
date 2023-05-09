@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ramu;
 use App\Models\Rakit;
+use App\Models\Terap;
 use App\Models\Ulang;
 use App\Models\Angkatan;
 use Illuminate\Http\Request;
@@ -16,6 +17,7 @@ class AdminController extends Controller
         return view('admin.dashboard', [
             'ramu' => Ramu::get(),
             'rakit' => Rakit::get(),
+            'terap' => Terap::get(),
             'angkatan' => Angkatan::get(),
         ]);
     }
@@ -83,11 +85,16 @@ class AdminController extends Controller
         return redirect()->intended('/admin/msj2')->with('success-update', 'Data Updated Successfully');
     }
 
-    public function terapUpdate()
+    public function terapUpdate($id, Request $request)
     {
-        $Terap = Terap::all();
+        $terap = Terap::find($id);
+        $terap->update([
+            'tanggal' => $request -> tanggal,
+            'jam' => $request -> jam,
+            'judul' => $request -> judul
+        ]);
         
-        return view('admin.terap', compact('terap'));
+        return redirect()->intended('/admin/msj3')->with('success-update', 'Data Updated Successfully');
     }
 
     public function ulangUpdate($id, Request $request)

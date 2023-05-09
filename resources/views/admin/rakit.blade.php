@@ -1,7 +1,7 @@
 @extends('layout.admin')
 
 @section('title')
-    MSJ 2 | Daftar MSJ
+    MSJ 2 | Daftar MSJ Admin
 @endsection
 
 @section('heading')

@@ -31,6 +31,7 @@ class DatabaseSeeder extends Seeder
             AngkatanSeeder::class,
             RamuSeeder::class,
             RakitSeeder::class,
+            TerapSeeder::class,
             UlangSeeder::class
         ]);
     }

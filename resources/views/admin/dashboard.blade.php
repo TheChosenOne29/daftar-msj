@@ -1,7 +1,7 @@
 @extends('layout.admin')
 
 @section('title')
-    Dashboard | Daftar MSJ
+    Dashboard | Daftar MSJ Admin
 @endsection
 
 @section('heading')
@@ -81,6 +81,31 @@
                                 <td>{{ Carbon\Carbon::parse($item3 -> tanggal)->translatedFormat('l, d F Y'); }}</td>
                                 <td>{{ substr($item3 -> jam, 0, -3);}}</td>
                                 <td style="text-align-last: left">{{ $item3 -> judul }}</td>
+                            </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-8 mx-auto">
+            <h4 style="text-align: center" class="mb-4">Jadwal MSJ 3</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered mb-5 text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Kelas</th>
+                            <th scope="col">Tanggal</th>
+                            <th scope="col">Jam</th>
+                            <th scope="col">Judul</th>
+                        </tr>
+                    </thead>
+                    @foreach ($terap as $item4)
+                        <tbody>
+                            <tr>
+                                <th scope="row">{{ $item4 -> id }}</th>
+                                <td>{{ Carbon\Carbon::parse($item4 -> tanggal)->translatedFormat('l, d F Y'); }}</td>
+                                <td>{{ substr($item4 -> jam, 0, -3);}}</td>
+                                <td style="text-align-last: left">{{ $item4 -> judul }}</td>
                             </tr>
                     @endforeach
                     </tbody>

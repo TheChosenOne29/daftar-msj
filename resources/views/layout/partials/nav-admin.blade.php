@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->is('admin/msj3') ? 'active' : '' }}" href="#">
+                <a class="nav-link {{ request()->is('admin/msj3') ? 'active' : '' }}" href="/admin/msj3">
                     <i class="bi-3-circle-fill" class="align-text-bottom"></i>
                     MSJ 3
                 </a>
