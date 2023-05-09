@@ -20,18 +20,19 @@
         <hr class="hr" />
 
         <h2>Syarat Mengikuti MSJ 2</h2>
-        <p class="fs-5 col-md-8">
+        <p class="fs-5 col-md-8">MSJ 2 ditujukan untuk jemaat yang sudah bertumbuh dan yang akan 
+            terlibat dalam pelayanan dalam departemen dan penggembalaan. Terdapat dua syarat yang harus dipenuhi.
         </p>
         <br>
         <div class="row g-5">
             <div class="col-md-6">
                 <h3>Sudah lulus MSJ 1</h3>
-                <p class="fs-5">Pastikan anda sudah mengikuti dan menyelesaikan MSJ 1 agar dapat melanjutkan ke MSJ 2.
+                <p class="fs-5">Pastikan anda sudah mengikuti, dan menyelesaikan MSJ 1.
                     Belum lulus MSJ 1? Tekan tombol berikut untuk mendapatkan
-                    informasi MSJ 1 selanjutnya.
+                    informasi mengenai kelas MSJ 1 selanjutnya.
                 </p>
 
-                <div class="d-grid gap-2 col-6">
+                <div class="d-grid gap-2">
                     <a href="/1/peserta" class="btn btn-success btn-lg mt-auto" role="button">Daftar MSJ 1</a>
                 </div>
             </div>
@@ -42,7 +43,13 @@
                     Connect Group minimal delapan kali.
                 </p>
                 <p class="fs-5">
-
+                    Cara mengecek NIJ
+                    <ul>
+                        <li>Buka aplikasi GMS Church</li>
+                        <li>Buka Profile (tombol di sudut kanan bawah)</li>
+                        <li>Lihat bagian NIJ</li>
+                        <li>Jika pada bagian NIJ muncul tulisan "Get NIJ", silahkan ditekan agar NIJ muncul</li>
+                    </ul>
                 </p>
 
             </div>
@@ -51,12 +58,12 @@
 
             <div class="col">
                 <h2 style="text-align: center">
-                    Belum mendaftar atau belum berhasil aktivasi?
+                    NIJ sudah muncul?
                 </h2>
-                <p style="text-align: center">Silahkan ikuti instruksi pada halaman sebelumnya, atau tekan tombol dibawah.
+                <p style="text-align: center">Silahkan tekan tombol dibawah untuk melanjutkan pendaftaran MSJ 2.
                 </p>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <a class="btn btn-danger btn-lg" href="/1/aktivasi">Aktivasi Akun GMS Church</a>
+                    <a class="btn btn-primary btn-lg" href="/2/peserta">Ya, saya sudah memiliki NIJ</a>
                 </div>
             </div>
         </div>

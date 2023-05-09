@@ -29,6 +29,9 @@ Route::prefix('1')->group(function () {
 
 Route::prefix('2')->group(function () {
     Route::get('/nij', [RakitController::class, 'nij']);
+    Route::get('/peserta', [RakitController::class, 'peserta']);
+    Route::get('/baru', [RakitController::class, 'baru']);
+    Route::get('/ulang', [RakitController::class, 'ulang']);
 });
 
 Route::middleware(['auth'])->group(function () {
