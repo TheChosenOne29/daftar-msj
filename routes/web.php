@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\RamuController;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\RamuController;
 use App\Http\Controllers\RakitController;
+use App\Http\Controllers\TerapController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,13 @@ Route::prefix('2')->group(function () {
     Route::get('/peserta', [RakitController::class, 'peserta']);
     Route::get('/baru', [RakitController::class, 'baru']);
     Route::get('/ulang', [RakitController::class, 'ulang']);
+});
+
+Route::prefix('3')->group(function () {
+    Route::get('/nij', [TerapController::class, 'nij']);
+    Route::get('/peserta', [TerapController::class, 'peserta']);
+    Route::get('/baru', [TerapController::class, 'baru']);
+    Route::get('/ulang', [TerapController::class, 'ulang']);
 });
 
 Route::middleware(['auth'])->group(function () {
