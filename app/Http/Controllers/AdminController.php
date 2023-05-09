@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ramu;
+use App\Models\Rakit;
 use App\Models\Ulang;
 use App\Models\Angkatan;
 use Illuminate\Http\Request;
@@ -14,6 +15,7 @@ class AdminController extends Controller
     {
         return view('admin.dashboard', [
             'ramu' => Ramu::get(),
+            'rakit' => Rakit::get(),
             'angkatan' => Angkatan::get(),
         ]);
     }
@@ -69,11 +71,16 @@ class AdminController extends Controller
         return redirect()->intended('/admin/msj1')->with('success-update', 'Data Updated Successfully');
     }
 
-    public function rakitUpdate()
+    public function rakitUpdate($id, Request $request)
     {
-        $rakit = Rakit::all();
+        $rakit = Rakit::find($id);
+        $rakit->update([
+            'tanggal' => $request -> tanggal,
+            'jam' => $request -> jam,
+            'judul' => $request -> judul
+        ]);
         
-        return view('admin.rakit', compact('rakit'));
+        return redirect()->intended('/admin/msj2')->with('success-update', 'Data Updated Successfully');
     }
 
     public function terapUpdate()
