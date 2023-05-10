@@ -1,14 +1,14 @@
 @extends('layout.main')
 
 @section('title')
-    MSJ 2 | Peserta Baru
+    MSJ 3 | Peserta Baru
 @endsection
 
 @section('content')
     <div class="col mx-auto p-4 py-md-5">
-        <h1>Peserta Baru MSJ 2</h1>
+        <h1>Peserta Baru MSJ 3</h1>
         <hr class="hr" />
-        <p class="fs-5 col-md-8">Peserta baru adalah peserta yang belum pernah mengikuti MSJ 2 dan sudah memiliki NIJ.
+        <p class="fs-5 col-md-8">Peserta baru adalah peserta yang belum pernah mengikuti MSJ 3 dan sudah memiliki NIJ.
         </p>
 
         <hr class="col">
@@ -35,7 +35,7 @@
                         <p class="card-text">
                             Pastikan semua kolom terisi dengan <b>benar</b></p>
                         <ul>
-                            <li>Pilih <b>My Spiritual Journey 2</b></li>
+                            <li>Pilih <b>My Spiritual Journey 3</b></li>
                             <li>Isi <b>2023</b></li>
                             <li>Pilih <b>Lampung</b></li>
                         </ul>
@@ -61,6 +61,6 @@
         <h2 style="text-align: center">
             Selamat!
         </h2>
-        <p style="text-align: center">Anda berhasil mendaftar kelas MSJ 2. Sampai jumpa di kelas pertama!</p>
+        <p style="text-align: center">Anda berhasil mendaftar kelas MSJ 3. Sampai jumpa di kelas pertama!</p>
     </div>
 @endsection

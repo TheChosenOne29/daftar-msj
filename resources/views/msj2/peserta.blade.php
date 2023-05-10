@@ -67,11 +67,11 @@
 
     <div class="col">
     <h2 style="text-align: center">
-        Belum mendaftar atau belum berhasil aktivasi?
+        Belum mendaftar atau masih bingung?
     </h2>
     <p style="text-align: center">Silahkan ikuti instruksi pada halaman sebelumnya, atau tekan tombol dibawah.</p>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-danger btn-lg" href="/1/aktivasi">Aktivasi Akun GMS Church</a>
+            <a class="btn btn-danger btn-lg" href="/2/nij">Dapatkan NIJ</a>
         </div>
     </div>
 </div>

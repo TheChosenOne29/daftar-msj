@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('title')
-    MSJ 2 | NIJ
+    MSJ 3 | NIJ
 @endsection
 
 @section('content')
@@ -19,27 +19,27 @@
         </p>
         <hr class="hr" />
 
-        <h2>Syarat Mengikuti MSJ 2</h2>
-        <p class="fs-5 col-md-8">MSJ 2 ditujukan untuk jemaat yang sudah bertumbuh dan yang akan 
-            terlibat dalam pelayanan dalam departemen dan penggembalaan. Terdapat dua syarat yang harus dipenuhi.
+        <h2>Syarat Mengikuti MSJ 3</h2>
+        <p class="fs-5 col-md-8">MSJ 3 ditujukan untuk para pemimpin/calon pemimpin yang akan melayani 
+            baik dalam departemen maupun penggembalaan yang ada.
         </p>
         <br>
         <div class="row g-5">
             <div class="col-md-6">
-                <h3>Sudah lulus MSJ 1</h3>
-                <p class="fs-5">Pastikan anda sudah mengikuti, dan menyelesaikan MSJ 1.
-                    Belum lulus MSJ 1? Tekan tombol berikut untuk mendapatkan
-                    informasi mengenai kelas MSJ 1 selanjutnya.
+                <h3>Sudah lulus MSJ 2</h3>
+                <p class="fs-5">Pastikan anda sudah mengikuti, dan menyelesaikan MSJ 2.
+                    Belum lulus MSJ 2? Tekan tombol berikut untuk mendapatkan
+                    informasi mengenai kelas MSJ 2 selanjutnya.
                 </p>
 
                 <div class="d-grid gap-2">
-                    <a href="/1/peserta" class="btn btn-success btn-lg mt-auto" role="button">Daftar MSJ 1</a>
+                    <a href="/2/peserta" class="btn btn-success btn-lg mt-auto" role="button">Daftar MSJ 2</a>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <h3>Sudah memiliki Nomor Induk Jemaat</h3>
-                <p class="fs-5">Jemaat akan otomatis mendapatkan NIJ jika sudah menyelesaikan MSJ 1 dan hadir didalam
+                <p class="fs-5">Jemaat akan otomatis mendapatkan NIJ jika sudah menyelesaikan MSJ 2 dan hadir didalam
                     Connect Group minimal delapan kali.
                 </p>
                 <p class="fs-5">
@@ -60,10 +60,10 @@
                 <h2 style="text-align: center">
                     NIJ sudah muncul?
                 </h2>
-                <p style="text-align: center">Silahkan tekan tombol dibawah untuk melanjutkan pendaftaran MSJ 2.
+                <p style="text-align: center">Silahkan tekan tombol dibawah untuk melanjutkan pendaftaran MSJ 3.
                 </p>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <a class="btn btn-primary btn-lg" href="/2/peserta">Ya, saya sudah memiliki NIJ</a>
+                    <a class="btn btn-primary btn-lg" href="/2/peserta">Ya, saya akan mendaftar MSJ 3</a>
                 </div>
             </div>
         </div>

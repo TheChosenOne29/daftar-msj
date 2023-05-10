@@ -1,15 +1,15 @@
 @extends('layout.main')
 
 @section('title')
-    MSJ 2 | Peserta
+    MSJ 3 | Peserta
 @endsection
 
 @section('content')
 <div class="col mx-auto p-4 py-md-5">
-    <h1>Selamat Datang Para Peserta MSJ 2</h1>
+    <h1>Selamat Datang Para Peserta MSJ 3</h1>
     <hr class="hr" />
     
-    <h2>Jadwal Kelas MSJ 2</h2>
+    <h2>Jadwal Kelas MSJ 3</h2>
     <p class="fs-5 col-md-8">Angkatan {{ $angkatan -> nomor }} - {{ Carbon\Carbon::parse($angkatan -> bulantahun)->translatedFormat('F Y'); }}</p>
     <div class="table-responsive">
       <table class="table table-striped">
@@ -22,7 +22,7 @@
             </tr>
           </thead>
           <tbody class="table-group-divider">
-            @foreach ($rakit as $item2)
+            @foreach ($terap as $item2)
             <tr>
               <th scope="row">{{ $item2 -> id }}</th>
               <td>{{ Carbon\Carbon::parse($item2 -> tanggal)->translatedFormat('l, d F Y'); }}</td>
@@ -37,13 +37,13 @@
     <hr class="hr" />
 
     <h2>Pilih Jenis Peserta</h2>
-    <p class="fs-5 col-md-8">Pendaftaran MSJ 2 ini dibagi menjadi dua, untuk <b>peserta baru</b> dan untuk <b>peserta ulang</b>. Harap diperhatikan agar tidak terjadi kesalahan.
+    <p class="fs-5 col-md-8">Pendaftaran MSJ 3 ini dibagi menjadi dua, untuk <b>peserta baru</b> dan untuk <b>peserta ulang</b>. Harap diperhatikan agar tidak terjadi kesalahan.
     </p>
     <br>
     <div class="row g-5">
         <div class="col-md-6">
             <h3>Peserta Baru</h3>
-            <p class="fs-5">Peserta baru adalah peserta yang belum pernah mengikuti MSJ 2 dan sudah memiliki NIJ.
+            <p class="fs-5">Peserta baru adalah peserta yang belum pernah mengikuti MSJ 3 dan sudah memiliki NIJ.
         </p>
 
         <div class="d-grid gap-2 col-6">
@@ -53,7 +53,7 @@
 
         <div class="col-md-6">
             <h3>Peserta Ulang</h3>
-            <p class="fs-5">Peserta Ulang adalah peserta yang sudah pernah mengikuti kelas MSJ 2 dalam satu tahun terakhir.
+            <p class="fs-5">Peserta Ulang adalah peserta yang sudah pernah mengikuti kelas MSJ 3 dalam satu tahun terakhir.
         </p>
         
         <div class="d-grid gap-2 col-6">
@@ -67,11 +67,11 @@
 
     <div class="col">
     <h2 style="text-align: center">
-        Belum mendaftar atau belum berhasil aktivasi?
+        Belum mendaftar atau masih bingung?
     </h2>
     <p style="text-align: center">Silahkan ikuti instruksi pada halaman sebelumnya, atau tekan tombol dibawah.</p>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-danger btn-lg" href="/1/aktivasi">Aktivasi Akun GMS Church</a>
+            <a class="btn btn-danger btn-lg" href="/3/nij">Dapatkan NIJ</a>
         </div>
     </div>
 </div>
