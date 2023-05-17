@@ -9,14 +9,14 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('admin/angkatan') ? 'active' : '' }}" href="/admin/angkatan">
-                    <i class="bi-bar-chart-fill" class="align-text-bottom"></i>
+                    <i class="bi-calendar-week-fill" class="align-text-bottom"></i>
                     Angkatan
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('admin/ulang') ? 'active' : '' }}" href="/admin/ulang">
-                    <i class="bi-rewind-fill" class="align-text-bottom"></i>
-                    Daftar Ulang
+                    <i class="bi-arrow-up-right-square-fill" class="align-text-bottom"></i>
+                    Link Peserta
                 </a>
             </li>
             <li class="nav-item">

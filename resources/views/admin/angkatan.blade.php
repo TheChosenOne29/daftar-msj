@@ -10,6 +10,12 @@
 
 @section('content')
     <div class="container">
+        @if (session()->has('success-update'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> {{ session('success-update') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
         <div class="col-md-8 mx-auto">
             <h4 style="text-align: center" class="mb-4">Angkatan MSJ</h4>
             <table class="table table-bordered mb-5 text-center">
@@ -25,11 +31,11 @@
                     <tbody>
                         <tr>
                             <th scope="row">
-                                {{ $item -> id }}
+                                {{ $item->id }}
                             </th>
-                            <td>{{ $item -> nomor }}</td>
-                            <td>{{ Carbon\Carbon::parse($item -> bulantahun)->translatedFormat('F') }}</td>
-                            <td>{{ Carbon\Carbon::parse($item -> bulantahun)->translatedFormat('Y') }}</td>
+                            <td>{{ $item->nomor }}</td>
+                            <td>{{ Carbon\Carbon::parse($item->bulantahun)->translatedFormat('F') }}</td>
+                            <td>{{ Carbon\Carbon::parse($item->bulantahun)->translatedFormat('Y') }}</td>
                         </tr>
                 @endforeach
                 </tbody>
@@ -45,18 +51,19 @@
                     </thead>
                     <tbody>
                         @foreach ($angkatan as $item2)
-                            <form action="/admin/angkatan/update/{{ $item2 -> id }}" method="POST">
+                            <form action="/admin/angkatan/update/{{ $item2->id }}" method="POST">
                                 @csrf
                                 <tr>
                                     <th scope="row">
-                                        {{ $item2 -> id }}
-                                        <input type="hidden" name="id" value={{ $item2 -> id }}>
+                                        {{ $item2->id }}
+                                        <input type="hidden" name="id" value={{ $item2->id }}>
                                     </th>
                                     <td>
-                                        <input type="number" name="nomor" width="1em" value={{ $item2 ->  nomor}}>
+                                        <input type="number" name="nomor" width="1em" value={{ $item2->nomor }}>
                                     </td>
                                     <td>
-                                        <input type="month" name="bulantahun" width="10em" value={{ substr(($item2 -> bulantahun), 0, -3) }}>
+                                        <input type="month" name="bulantahun" width="10em"
+                                            value={{ substr($item2->bulantahun, 0, -3) }}>
                                     </td>
                                     <td>
                                         <button type="submit" class="btn btn-sm btn-warning">

@@ -10,6 +10,12 @@
 
 @section('content')
     <div class="container">
+        @if (session()->has('success-update'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> {{ session('success-update') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
         <div class="col-md-8 mx-auto">
             <h4 style="text-align: center" class="mb-4">Jadwal MSJ 2</h4>
             <div class="table-responsive">
@@ -54,12 +60,6 @@
                     </tbody>
                 </table>
             </div>
-            @if (session()->has('success-update'))
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Success!</strong> {{ session('success-update') }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            @endif
         </div>
     </div>
 @endsection
