@@ -110,7 +110,7 @@ class AdminController extends Controller
     public function ulang()
     {
         return view('admin.ulang', [
-            'link' => Ulang::get(),
+            'link' => Ulang::get()
         ]);
     }
 }
