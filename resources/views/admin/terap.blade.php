@@ -5,7 +5,7 @@
 @endsection
 
 @section('heading')
-    <h1 class="h2">My Spiritual Journey 2</h1>
+    <h1 class="h2">My Spiritual Journey 3</h1>
 @endsection
 
 @section('content')

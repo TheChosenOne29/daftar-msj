@@ -55,7 +55,7 @@ class AdminController extends Controller
         $angkatan = Angkatan::find($id);
         $angkatan->update([
             'nomor' => $request -> nomor,
-            'bulantahun' => $request -> bulantahun,
+            'bulantahun' => $request -> bulantahun."-01",
         ]);
         
         return redirect()->intended('/admin/angkatan')->with('success-update', 'Data Updated Successfully');

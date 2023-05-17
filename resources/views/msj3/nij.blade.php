@@ -58,12 +58,12 @@
 
             <div class="col">
                 <h2 style="text-align: center">
-                    NIJ sudah muncul?
+                    Persyaratan sudah terpenuhi?
                 </h2>
                 <p style="text-align: center">Silahkan tekan tombol dibawah untuk melanjutkan pendaftaran MSJ 3.
                 </p>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <a class="btn btn-primary btn-lg" href="/2/peserta">Ya, saya akan mendaftar MSJ 3</a>
+                    <a class="btn btn-primary btn-lg" href="/3/peserta">Ya, saya akan mendaftar MSJ 3</a>
                 </div>
             </div>
         </div>

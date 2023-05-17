@@ -47,7 +47,7 @@
         </p>
 
         <div class="d-grid gap-2 col-6">
-            <a href="/2/baru" class="btn btn-success btn-lg mt-auto" role="button">Saya peserta baru</a>
+            <a href="/3/baru" class="btn btn-success btn-lg mt-auto" role="button">Saya peserta baru</a>
             </div>
         </div>
 
@@ -57,7 +57,7 @@
         </p>
         
         <div class="d-grid gap-2 col-6">
-            <a href="/2/ulang" class="btn btn-primary btn-lg mt-auto" role="button">Saya peserta ulang</a>
+            <a href="/3/ulang" class="btn btn-primary btn-lg mt-auto" role="button">Saya peserta ulang</a>
             </div>
         </div>
 
