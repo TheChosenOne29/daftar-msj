@@ -57,7 +57,7 @@
             <p class="card-text">MSJ 3 ditujukan untuk para pemimpin/calon pemimpin yang akan melayani 
                 baik dalam departemen maupun penggembalaan yang ada.</p>
             <small class="card-text mt-auto">Terdiri dari 5 kelas</small>
-            <a href="#" class="mt-auto w-100 btn btn-lg btn-primary">Daftar MSJ 3</a>
+            <a href="3/nij" class="mt-auto w-100 btn btn-lg btn-primary">Daftar MSJ 3</a>
         </div>
       </div>
     </div>
