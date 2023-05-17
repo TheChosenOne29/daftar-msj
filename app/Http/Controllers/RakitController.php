@@ -17,7 +17,11 @@ class RakitController extends Controller
 
     public function baru()
     {
-        return view('msj2.baru');
+        $link_baru = Ulang::find(2);
+
+        return view('msj2.baru')->with([
+            'link' => $link_baru
+        ]);
     }
 
     public function ulang()

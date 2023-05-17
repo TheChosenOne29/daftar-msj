@@ -56,11 +56,21 @@
             </div>
         </div>
 
-
+        <div class="col">
+            <h2 style="text-align: center">
+                Atau daftar menggunakan komputer anda
+            </h2>
+            <p style="text-align: center">Silahkan tekan tombol dibawah untuk menuju <i>website</i> pendaftaran MSJ</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a class="btn btn-primary btn-lg" href="{{ $link->link_baru }}" target="_blank">Link Daftar Baru</a>
+            </div>
+        </div>
         <hr class="hr" />
-        <h2 style="text-align: center">
-            Selamat!
-        </h2>
-        <p style="text-align: center">Anda berhasil mendaftar kelas MSJ 3. Sampai jumpa di kelas pertama!</p>
+        <div class="col">
+            <h2 style="text-align: center">
+                Selamat!
+            </h2>
+            <p style="text-align: center">Anda berhasil mendaftar kelas MSJ 3. Sampai jumpa di kelas pertama!</p>
+        </div>
     </div>
 @endsection

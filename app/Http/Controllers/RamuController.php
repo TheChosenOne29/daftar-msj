@@ -17,7 +17,11 @@ class RamuController extends Controller
 
     public function baru()
     {
-        return view('msj1.baru');
+        $link_baru = Ulang::first();
+
+        return view('msj1.baru')->with([
+            'link' => $link_baru
+        ]);
     }
 
     public function ulang()

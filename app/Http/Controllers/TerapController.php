@@ -17,12 +17,16 @@ class TerapController extends Controller
 
     public function baru()
     {
-        return view('msj3.baru');
+        $link_baru = Ulang::find(3);
+
+        return view('msj3.baru')->with([
+            'link' => $link_baru
+        ]);
     }
 
     public function ulang()
     {
-        $link = Ulang::find(2);
+        $link = Ulang::find(3);
 
         return view('msj3.ulang')->with([
             'link' => $link
@@ -32,7 +36,7 @@ class TerapController extends Controller
     public function peserta()
     {
         $terap = Terap::all();
-        $angkatan = Angkatan::find(2);
+        $angkatan = Angkatan::find(3);
 
         return view('msj3.peserta')->with([
             'terap' => $terap,

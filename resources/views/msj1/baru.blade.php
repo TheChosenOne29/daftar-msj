@@ -50,18 +50,29 @@
                     <div class="card-body d-flex flex-column">
                         <img src="/img/submit.png" class="card-img border mb-2">
                         <h5 class="card-text">Tekan tombol "Submit"</h5>
-                        <p class="card-text">Konfirmasi jadwal kelas yang ditampilkan. Pastikan anda mencatatnya agar tidak terlewat.
+                        <p class="card-text">Konfirmasi jadwal kelas yang ditampilkan. Pastikan anda mencatatnya agar tidak
+                            terlewat.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-
+        <div class="col">
+            <h2 style="text-align: center">
+                Atau daftar menggunakan komputer anda
+            </h2>
+            <p style="text-align: center">Silahkan tekan tombol dibawah untuk menuju <i>website</i> pendaftaran MSJ</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a class="btn btn-primary btn-lg" href="{{ $link->link_baru }}" target="_blank">Link Daftar Baru</a>
+            </div>
+        </div>
         <hr class="hr" />
-        <h2 style="text-align: center">
-            Selamat!
-        </h2>
-        <p style="text-align: center">Anda berhasil mendaftar kelas MSJ 1. Sampai jumpa di kelas pertama!</p>
+        <div class="col">
+            <h2 style="text-align: center">
+                Selamat!
+            </h2>
+            <p style="text-align: center">Anda berhasil mendaftar kelas MSJ 1. Sampai jumpa di kelas pertama!</p>
+        </div>
     </div>
 @endsection

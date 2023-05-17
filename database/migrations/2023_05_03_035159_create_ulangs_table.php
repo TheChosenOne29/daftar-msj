@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('link', 500);
+            $table->string('link_baru', 500);
         });
     }
 

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Ulang extends Model
 {
     protected $fillable = [
-        'link'
+        'link',
+        'link_baru'
     ];
 }
