@@ -14,7 +14,7 @@
 </div>
 
 <div class="row row-cols-1 row-cols-md-3 mb-3">
-    <div class="col mb-3">
+    <div class="col mb-3 mx-auto">
       <div class="card h-100 mb-4 rounded-3 shadow-sm border-success">
         <div class="card-header py-3 text-bg-success border-success">
           <h4 class="my-0 fw-normal text-center">My Spiritual Journey 1</h4>
@@ -30,7 +30,7 @@
       </div>
     </div>
     
-    <div class="col mb-3">
+    <div class="col mb-3 mx-auto">
       <div class="card h-100 mb-4 rounded-3 shadow-sm border-danger">
         <div class="card-header py-3 text-bg-danger border-danger">
           <h4 class="my-0 fw-normal text-center">My Spiritual Journey 2</h4>
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div class="col mb-3">
+    <div class="col mb-3 mx-auto">
       <div class="card h-100 mb-4 rounded-3 shadow-sm border-primary">
         <div class="card-header py-3 text-bg-primary border-primary">
           <h4 class="my-0 fw-normal text-center">My Spiritual Journey 3</h4>
