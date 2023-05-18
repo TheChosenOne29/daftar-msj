@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CardController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\RamuController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RakitController;
 use App\Http\Controllers\TerapController;
 
@@ -53,6 +54,7 @@ Route::middleware(['auth'])->group(function () {
 
         Route::post('/angkatan/update/{id}', [AdminController::class, 'angkatanUpdate']);
         Route::post('/link/update/{id}', [AdminController::class, 'ulangUpdate']);
+        Route::post('/linkbaru/update/{id}', [AdminController::class, 'baruUpdate']);
         
         Route::post('/msj1/update/{id}', [AdminController::class, 'ramuUpdate']);
         Route::post('/msj2/update/{id}', [AdminController::class, 'rakitUpdate']);

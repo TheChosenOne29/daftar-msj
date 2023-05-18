@@ -71,7 +71,7 @@
                     </thead>
                     <tbody>
                         @foreach ($link as $item3)
-                            <form action="/admin/link/update/{{ $item3->id }}" method="POST">
+                            <form action="/admin/linkbaru/update/{{ $item3->id }}" method="POST">
                                 @csrf
                                 <tr>
                                     <th scope="row">

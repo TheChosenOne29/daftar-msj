@@ -107,6 +107,16 @@ class AdminController extends Controller
         return redirect()->intended('/admin/ulang')->with('success-update', 'Data Updated Successfully');
     }
 
+    public function baruUpdate($id, Request $request)
+    {
+        $link = Ulang::find($id);
+        $link->update([
+            'link' => $request -> link_baru
+        ]);
+
+        return redirect()->intended('/admin/ulang')->with('success-update', 'Data Updated Successfully');
+    }
+
     public function ulang()
     {
         return view('admin.ulang', [
