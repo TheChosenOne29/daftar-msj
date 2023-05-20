@@ -8,15 +8,21 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ request()->is('admin/cards') ? 'active' : '' }}" href="/admin/cards">
+                    <i class="bi-collection-fill" class="align-text-bottom"></i>
+                    Cards
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ request()->is('admin/angkatan') ? 'active' : '' }}" href="/admin/angkatan">
                     <i class="bi-calendar-week-fill" class="align-text-bottom"></i>
                     Angkatan
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->is('admin/ulang') ? 'active' : '' }}" href="/admin/ulang">
+                <a class="nav-link {{ request()->is('admin/link') ? 'active' : '' }}" href="/admin/link">
                     <i class="bi-arrow-up-right-square-fill" class="align-text-bottom"></i>
-                    Link Peserta
+                    Link
                 </a>
             </li>
             <li class="nav-item">

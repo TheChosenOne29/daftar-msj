@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Database\Seeders\CardSeeder;
 use Database\Seeders\RamuSeeder;
 use Database\Seeders\RakitSeeder;
 use Database\Seeders\TerapSeeder;
@@ -34,7 +35,8 @@ class DatabaseSeeder extends Seeder
             RamuSeeder::class,
             RakitSeeder::class,
             TerapSeeder::class,
-            UlangSeeder::class
+            CardSeeder::class,
+            LinkSeeder::class
         ]);
     }
 }

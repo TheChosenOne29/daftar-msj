@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Link;
 use App\Models\Terap;
-use App\Models\Ulang;
 use App\Models\Angkatan;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -17,19 +17,19 @@ class TerapController extends Controller
 
     public function baru()
     {
-        $link_baru = Ulang::find(3);
+        $baru = Link::find(3);
 
         return view('msj3.baru')->with([
-            'link' => $link_baru
+            'link' => $baru
         ]);
     }
 
     public function ulang()
     {
-        $link = Ulang::find(3);
+        $ulang = Link::find(3);
 
         return view('msj3.ulang')->with([
-            'link' => $link
+            'link' => $ulang
         ]);
     }
 

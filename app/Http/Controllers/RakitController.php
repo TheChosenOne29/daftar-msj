@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Link;
 use App\Models\Rakit;
-use App\Models\Ulang;
 use App\Models\Angkatan;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -17,19 +17,19 @@ class RakitController extends Controller
 
     public function baru()
     {
-        $link_baru = Ulang::find(2);
+        $baru = Link::find(2);
 
         return view('msj2.baru')->with([
-            'link' => $link_baru
+            'link' => $baru
         ]);
     }
 
     public function ulang()
     {
-        $link = Ulang::find(2);
+        $ulang = Link::find(2);
 
         return view('msj2.ulang')->with([
-            'link' => $link
+            'link' => $ulang
         ]);
     }
 

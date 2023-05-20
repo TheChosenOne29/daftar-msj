@@ -18,7 +18,7 @@
     <div class="col">
         <p style="text-align: center">Tekan tombol dibawah untuk menuju <i>Google Form</i>. Harap pastikan anda mengisi data dengan benar.</p>
             <div class="d-grid gap-2 col-6 mx-auto">
-                <a class="btn btn-danger btn-lg" href="{{ $link->link }}" target="_blank">Daftar Ulang</a>
+                <a class="btn btn-danger btn-lg" href="{{ $link->ulang }}" target="_blank">Daftar Ulang</a>
             </div>
         </div>
 </div>

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Link;
 use App\Models\Ramu;
-use App\Models\Ulang;
 use App\Models\Angkatan;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -17,19 +17,19 @@ class RamuController extends Controller
 
     public function baru()
     {
-        $link_baru = Ulang::first();
+        $baru = Link::first();
 
         return view('msj1.baru')->with([
-            'link' => $link_baru
+            'link' => $baru
         ]);
     }
 
     public function ulang()
     {
-        $link = Ulang::first();
+        $ulang = Link::first();
 
         return view('msj1.ulang')->with([
-            'link' => $link
+            'link' => $ulang
         ]);
     }
 

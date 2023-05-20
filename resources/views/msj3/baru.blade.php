@@ -62,7 +62,7 @@
             </h2>
             <p style="text-align: center">Silahkan tekan tombol dibawah untuk menuju <i>website</i> pendaftaran MSJ</p>
             <div class="d-grid gap-2 col-6 mx-auto">
-                <a class="btn btn-primary btn-lg" href="{{ $link->link_baru }}" target="_blank">Link Daftar Baru</a>
+                <a class="btn btn-primary btn-lg" href="{{ $link->baru }}" target="_blank">Link Daftar Baru</a>
             </div>
         </div>
         <hr class="hr" />
