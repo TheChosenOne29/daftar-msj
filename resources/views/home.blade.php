@@ -54,7 +54,7 @@
         <div class="card-body d-flex flex-column">
             <img src="/img/covermsj3.jpg" class="card-img">
             <h5 class="card-title"> MSJ 3 <small> Angkatan {{ $terap -> nomor }} - {{ Carbon\Carbon::parse($terap -> bulantahun)->translatedFormat('F Y'); }}</small></h5>
-            <p class="card-text">MSJ 3 ditujukan untuk para pemimpin/calon pemimpin yang akan melayani 
+            <p class="card-text">MSJ 3 ditujukan untuk para pemimpin/calon pemimpin yang akan memimpin 
                 baik dalam departemen maupun penggembalaan yang ada.</p>
             <small class="card-text mt-auto">Terdiri dari 5 kelas</small>
             <a href="3/nij" class="mt-auto w-100 btn btn-lg btn-primary">Daftar MSJ 3</a>
