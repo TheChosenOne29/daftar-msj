@@ -24,18 +24,20 @@
             Anda dapat mengetahui informasi terbaru mengenai jadwal ibadah, pelayanan, dan pencapaian pribadi anda didalam komitmen dan pelayanan. 
             Dapatkan versi terbaru dibawah ini.
        </p>
-       <br>
        <div class="d-grid gap-2 col-6 mx-auto">
-           <a href="https://play.google.com/store/apps/details?id=com.gms.church" class="btn btn-primary btn-lg" role="button"><i class="bi-android2"></i>Android</a>
-           <a href="https://apps.apple.com/id/app/gms-church/id1494423842" class="btn btn-primary btn-lg" role="button"><i class="bi-apple"></i>iOS</a>
+           <a href="https://play.google.com/store/apps/details?id=com.gms.church" class="btn btn-primary btn-lg" role="button"><i class="bi-android2"></i> Android</a>
+           <a href="https://apps.apple.com/id/app/gms-church/id1494423842" class="btn btn-primary btn-lg" role="button"><i class="bi-apple"></i> iOS</a>
         </div>
     </div>
 
     <div class="col-md-6">
         <h2>Koordinasi Peserta MSJ</h2>
         <p class="fs-5">Informasi kelas akan dibagikan melalui <i>WhatsApp Group</i> peserta MSJ. Harap para peserta MSJ mendaftar menggunakan nomor telepon yang
-            memiliki akun <i>WhatsApp</i>. Undangan grup akan dibagikan ke nomor telepon yang terdaftar di aplikasi GMS Church.
+            memiliki akun <i>WhatsApp</i>. Silahkan tekan tombol dibawah ini untuk bergabung kedalam <i>WhatsApp Group</i> peserta MSJ 1.
         </p>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="{{ $link->whatsapp }}" class="btn btn-success btn-lg" role="button"><i class="bi-whatsapp"></i> Group WhatsApp</a>
+         </div>
     </div>
 
     <hr class="hr" />
@@ -46,7 +48,7 @@
     </h2>
     <p style="text-align: center">Silahkan lanjutkan pendaftaran menggunakan tombol dibawah ini.</p>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-success btn-lg" href="/1/peserta">Ya, saya sudah berhasil aktivasi</a>
+            <a class="btn btn-primary btn-lg" href="/1/peserta">Ya, saya sudah berhasil aktivasi</a>
         </div>
     </div>
 </div>

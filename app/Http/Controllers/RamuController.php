@@ -12,7 +12,11 @@ class RamuController extends Controller
 {
     public function aktivasi()
     {
-        return view('msj1.aktivasi');
+        $whatsapp = Link::first();
+
+        return view('msj1.aktivasi')->with([
+            'link' => $whatsapp
+        ]);
     }
 
     public function baru()
