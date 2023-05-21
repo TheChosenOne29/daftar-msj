@@ -37,10 +37,12 @@ class TerapController extends Controller
     {
         $terap = Terap::all();
         $angkatan = Angkatan::find(3);
+        $whatsapp = Link::find(3);
 
         return view('msj3.peserta')->with([
             'terap' => $terap,
-            'angkatan' => $angkatan
+            'angkatan' => $angkatan,
+            'link' => $whatsapp
         ]);
     }
 }

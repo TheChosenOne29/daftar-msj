@@ -41,10 +41,12 @@ class RamuController extends Controller
     {
         $ramu = Ramu::all();
         $angkatan = Angkatan::first();
+        $link = Link::first();
 
         return view('msj1.peserta')->with([
             'ramu' => $ramu,
-            'angkatan' => $angkatan
+            'angkatan' => $angkatan,
+            'link' => $link
         ]);
     }
 }

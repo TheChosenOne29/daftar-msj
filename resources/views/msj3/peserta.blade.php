@@ -33,6 +33,12 @@
           </tbody>
       </table>
     </div>
+    <hr>
+    <h2>Link WhatsApp Group</h2>
+    <p class="fs-5 col-md-8">
+        Gunakan tombol dibawah ini untuk bergabung kedalam <i>WhatsApp Group</i>
+    </p>
+    <a href="{{ $link->whatsapp }}" class="btn btn-success btn-lg" role="button"><i class="bi-whatsapp"></i> Group WhatsApp</a>
     <br>
     <hr class="hr" />
 

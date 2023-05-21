@@ -37,10 +37,12 @@ class RakitController extends Controller
     {
         $rakit = Rakit::all();
         $angkatan = Angkatan::find(2);
+        $whatsapp = Link::find(2);
 
         return view('msj2.peserta')->with([
             'rakit' => $rakit,
-            'angkatan' => $angkatan
+            'angkatan' => $angkatan,
+            'link' => $whatsapp
         ]);
     }
 }
