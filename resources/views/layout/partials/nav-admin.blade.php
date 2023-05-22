@@ -8,7 +8,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->is('admin/card') ? 'active' : '' }}" href="/admin/card">
+                <a class="nav-link {{ request()->is('admin/cards') ? 'active' : '' }}" href="/admin/cards">
                     <i class="bi-collection-fill" class="align-text-bottom"></i>
                     Cards
                 </a>

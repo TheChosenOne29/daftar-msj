@@ -17,9 +17,15 @@ class CardController extends Controller
 
     public function update($id, Request $request)
     {
+        if($request->show_card === 'Visible'){
+            $response = False;
+        }elseif($request->show_card === 'Hidden'){
+            $response = True;
+        }
+
         $card = Card::find($id);
         $card->update([
-            'show_card' => $request -> show_card
+            'show_card' => $response
         ]);
         
         return redirect()->intended('/admin/cards')->with('success-update', 'Data Updated Successfully');

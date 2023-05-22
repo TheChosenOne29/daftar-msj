@@ -54,8 +54,9 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/msj2', [AdminController::class, 'rakit']);
         Route::get('/msj3', [AdminController::class, 'terap']);
 
-        Route::get('/card', [CardController::class, 'index']);
+        Route::get('/cards', [CardController::class, 'index']);
         
+        Route::post('/cards/update/{id}', [CardController::class, 'update']);
         Route::post('/angkatan/update/{id}', [AdminController::class, 'angkatanUpdate']);
         Route::post('/msj1/update/{id}', [AdminController::class, 'ramuUpdate']);
         Route::post('/msj2/update/{id}', [AdminController::class, 'rakitUpdate']);

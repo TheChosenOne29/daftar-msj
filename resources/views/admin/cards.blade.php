@@ -36,7 +36,11 @@
                                         <input type="hidden" name="id" value={{ $item2->id }}>
                                     </th>
                                     <td>
-                                        
+                                        @if ($item2->show_card == true)
+                                        <input type="submit" name ="show_card" value="Visible" class="btn btn-success">
+                                        @else
+                                        <input type="submit" name ="show_card" value="Hidden" class="btn btn-danger">
+                                    @endif
                                     </td>
                                 </tr>
                             </form>
