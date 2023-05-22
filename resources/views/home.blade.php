@@ -14,22 +14,25 @@
 </div>
 
 <div class="row row-cols-1 row-cols-md-3 mb-3">
+  @if ($show1->show_card == true)
     <div class="col mb-3 mx-auto">
       <div class="card h-100 mb-4 rounded-3 shadow-sm border-success">
         <div class="card-header py-3 text-bg-success border-success">
           <h4 class="my-0 fw-normal text-center">My Spiritual Journey 1</h4>
         </div>
         <div class="card-body d-flex flex-column">
-            <img src="/img/covermsj1.jpg" class="card-img">
-            <h5 class="card-title"> MSJ 1 <small> Angkatan {{ $ramu -> nomor }} - {{ Carbon\Carbon::parse($ramu -> bulantahun)->translatedFormat('F Y'); }}</small></h5>
-            <p class="card-text">MSJ 1 ditujukan untuk jiwa baru atau jemaat yang baru bergabung dalam Gereja Mawar Sharon 
-                dan ingin tertanam, bertumbuh, dan berbuah.</p>
+          <img src="/img/covermsj1.jpg" class="card-img">
+          <h5 class="card-title"> MSJ 1 <small> Angkatan {{ $ramu -> nomor }} - {{ Carbon\Carbon::parse($ramu -> bulantahun)->translatedFormat('F Y'); }}</small></h5>
+          <p class="card-text">MSJ 1 ditujukan untuk jiwa baru atau jemaat yang baru bergabung dalam Gereja Mawar Sharon 
+            dan ingin tertanam, bertumbuh, dan berbuah.</p>
             <small class="card-text mt-auto">Terdiri dari 4 kelas</small>
             <a href="1/aktivasi" class="mt-auto w-100 btn btn-lg btn-success">Daftar MSJ 1</a>
+          </div>
         </div>
       </div>
-    </div>
+  @endif
     
+  @if ($show2->show_card == true)
     <div class="col mb-3 mx-auto">
       <div class="card h-100 mb-4 rounded-3 shadow-sm border-danger">
         <div class="card-header py-3 text-bg-danger border-danger">
@@ -45,7 +48,9 @@
         </div>
       </div>
     </div>
+  @endif
 
+  @if ($show3->show_card == true)
     <div class="col mb-3 mx-auto">
       <div class="card h-100 mb-4 rounded-3 shadow-sm border-primary">
         <div class="card-header py-3 text-bg-primary border-primary">
@@ -61,6 +66,7 @@
         </div>
       </div>
     </div>
+  @endif
 
 </div>
 @endsection
