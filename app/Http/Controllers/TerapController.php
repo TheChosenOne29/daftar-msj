@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Card;
 use App\Models\Link;
 use App\Models\Terap;
 use App\Models\Angkatan;
@@ -12,7 +13,11 @@ class TerapController extends Controller
 {
     public function nij()
     {
-        return view('msj3.nij');
+        $show2 = Card::find(2);
+
+        return view('msj3.nij')->with([
+            'show2' => $show2
+        ]);
     }
 
     public function baru()

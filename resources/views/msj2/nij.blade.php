@@ -27,14 +27,19 @@
         <div class="row g-5">
             <div class="col-md-6">
                 <h3>Sudah lulus MSJ 1</h3>
+                @if ($show1->show_card == true)
                 <p class="fs-5">Pastikan anda sudah mengikuti, dan menyelesaikan MSJ 1.
                     Belum lulus MSJ 1? Tekan tombol berikut untuk mendapatkan
                     informasi mengenai kelas MSJ 1 selanjutnya.
                 </p>
-
                 <div class="d-grid gap-2">
                     <a href="/1/peserta" class="btn btn-success btn-lg mt-auto" role="button">Daftar MSJ 1</a>
                 </div>
+                @else
+                <p class="fs-5">Pastikan anda sudah mengikuti, dan menyelesaikan MSJ 1. Belum lulus MSJ 1?
+                    Silahkan nantikan informasi selanjutnya.
+                </p>
+                @endif
             </div>
 
             <div class="col-md-6">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Card;
 use App\Models\Link;
 use App\Models\Rakit;
 use App\Models\Angkatan;
@@ -12,7 +13,11 @@ class RakitController extends Controller
 {
     public function nij()
     {
-        return view('msj2.nij');
+        $show1 = Card::first();
+
+        return view('msj2.nij')->with([
+            'show1' => $show1
+        ]);
     }
 
     public function baru()
