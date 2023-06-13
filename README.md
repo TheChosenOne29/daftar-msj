@@ -6,7 +6,10 @@ Website petunjuk pendaftaran MSJ, dan peminjaman ruangan
 </small>
 </p>
 
+## Default account
+email	: administrator[at]gms.church
 
+pass	: lampung
 ## How to run?
 
 1. Clone repository ini
